@@ -6,6 +6,7 @@ import Home from './views/Home';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignUp from './views/SignUp';
 import Login from './views/Login';
+import BottomTabNav from './navigation/BottomTabNav';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,11 @@ export default function App() {
           <Stack.Screen 
             name='SignUp' 
             component={SignUp} 
+            options={{headerShown: false}} 
+          />
+          <Stack.Screen 
+            name='BottomTabNav' 
+            component={BottomTabNav} 
             options={{headerShown: false}} 
           />
 
