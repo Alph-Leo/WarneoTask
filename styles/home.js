@@ -8,10 +8,11 @@ export default StyleSheet.create({
     },
     headerText: {
         fontSize: 25, 
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: 'rgb(0, 0, 128)'
     },
     headerButton: {
-        backgroundColor: COLORS.white2,
+        backgroundColor: 'rgb(0, 0, 128)',
         borderColor: COLORS.gray,
         borderRadius: 10,
         width: 70,
@@ -20,6 +21,7 @@ export default StyleSheet.create({
     headerButtonText: {
         padding: 5, 
         marginLeft: 8,
-        fontWeight: '500'
+        fontWeight: '500',
+        color: 'yellow'
     }
 })

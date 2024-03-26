@@ -39,9 +39,10 @@ const screenOptions = {
     tabBarStyle: {
       outerWidth: SIZES.width,
       innerWidth: SIZES.width,
-      backgroundColor: COLORS.tabBarBrown,
+      backgroundColor: 'rgb(00, 00, 100)',
       borderTopRightRadius: 18,
       borderTopLeftRadius: 18,
+      borderRadius: 18,
       top: 0,
       height: (18 / 100) * SIZES.width,
     },
@@ -71,12 +72,12 @@ const screenOptions = {
                                     style={{
                                         height: 25,
                                         width: 25,
-                                        tintColor: focused ? 'yellow' : 'red'
+                                        tintColor: focused ? 'yellow' : 'white'
                                     }}
                                 />
                                 <View>
                                     <Text style={{
-                                        color: focused ? 'yellow' : 'red',
+                                        color: focused ? 'yellow' : 'white',
                                         fontSize: 12
                                     }}>Home</Text>
                                 </View>
@@ -108,12 +109,12 @@ const screenOptions = {
                                     style={{
                                         height: 25,
                                         width: 25,
-                                        tintColor: focused ? 'yellow' : 'red'
+                                        tintColor: focused ? 'yellow' : 'white'
                                     }}
                                 />
                                 <View>
                                     <Text style={{
-                                        color: focused ? 'yellow' : 'red',
+                                        color: focused ? 'yellow' : 'white',
                                         fontSize: 12
                                     }}>Profile</Text>
                                 </View>
@@ -167,12 +168,12 @@ const screenOptions = {
                                     style={{
                                         height: 25,
                                         width: 25,
-                                        tintColor: focused ? 'yellow' : 'red'
+                                        tintColor: focused ? 'yellow' : 'white'
                                     }}
                                 />
                                 <View>
                                     <Text style={{
-                                        color: focused ? 'yellow' : 'red',
+                                        color: focused ? 'yellow' : 'white',
                                         fontSize: 12
                                     }}>Chat</Text>
                                 </View>
@@ -204,12 +205,12 @@ const screenOptions = {
                                     style={{
                                         height: 25,
                                         width: 25,
-                                        tintColor: focused ? 'yellow' : 'red'
+                                        tintColor: focused ? 'yellow' : 'white'
                                     }}
                                 />
                                 <View>
                                     <Text style={{
-                                        color: focused ? 'yellow' : 'red',
+                                        color: focused ? 'yellow' : 'white',
                                         fontSize: 12
                                     }}>Settings</Text>
                                 </View>
