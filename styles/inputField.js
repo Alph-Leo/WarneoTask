@@ -3,8 +3,10 @@ import { COLORS, SIZES } from "../assets/themes/themes";
 
 export default StyleSheet.create({
     inputContainer: {
-        marginTop: 100,
-        padding: 20,
+        // marginLeft: 40,
+        // marginRight: 20
+        // margin: 20
+        
 
     },
     textInput: {
@@ -13,30 +15,32 @@ export default StyleSheet.create({
     },
 
     input: {
+        marginLeft: 20,
         width: '90%',
         height: 50,
-        borderColor: COLORS.gray,
+        borderColor: 'rgb(200, 100, 250)',
         borderWidth: 1,
         borderStyle: 'solid',
         borderRadius: 12,
         padding: 10,
         fontSize: SIZES.medium,
-        marginVertical: 10
+        marginVertical: 10,
+        color: COLORS.white,
+        backgroundColor: 'rgb(200, 100, 250)'
         
     },
     buttonContainer: {
-        marginTop: 100,
+        marginTop: 20,
         width:350,
         alignItems: 'center',
-        borderColor: COLORS.white
     },
     butttonStyle: {
         borderWidth: 1,
         height: 50,
-        width: 300,
-        borderRadius: 20,
+        width: '90%',
+        borderRadius: 12,
         borderStyle: 'solid',
-        borderColor: COLORS.white,
+        borderColor: 'blue',
         alignItems: 'center',
         backgroundColor: 'blue'
         

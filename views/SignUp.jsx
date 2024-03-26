@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
-import { ImageBackground, SafeAreaView, Text, TouchableOpacity, View } from 'react-native';
+import { ImageBackground, Pressable, SafeAreaView, Text, ToastAndroid, TouchableOpacity, View } from 'react-native';
 import InputField from '../components/reusableComponents/InputField';
 import inputField from '../styles/inputField';
 import { COLORS } from '../assets/themes/themes';
@@ -41,6 +41,7 @@ const navigation = useNavigation();
         ){
             setInputError("")
             navigateToPage('Login')
+            ToastAndroid.show('Signing you up now', ToastAndroid.SHORT)
         }
         
         setInputError('All fields are required');
@@ -53,13 +54,25 @@ const navigation = useNavigation();
             source={require('../assets/images/rm251-mind-15-b.jpg')}
             style={{height: '100%', width: '100%'}}
             >
+                <View style={{
+                    marginLeft: 125, 
+                    marginTop: 100,
+                    height: 50
+                    
+                    }}>
+                    <Text style={{
+                        color: COLORS.white,
+                        fontSize: 25,
+                        fontWeight: '700'
+                    }}>
+                            Sign Up</Text>
+                </View>
                 <View style={inputField.inputContainer}>
                     <InputField
                         placeholder="FirstName"
                         keyboardType="name"
                         onChangeTex={(text) => setFirstName(text)}
                         value={firstName}
-                        style={inputField.textInput}
                         
                     />
                     <InputField
@@ -91,7 +104,7 @@ const navigation = useNavigation();
                 <View>
                     {error && <Text style={{color: COLORS.white}}></Text>}
                     {inputError !== "" && (
-                        <Text style={{color: COLORS.darkChocolateBrown}}>{inputError}</Text>
+                        <Text style={{color: 'red'}}>{inputError}</Text>
                     )}
                 </View>
                 <View style={inputField.buttonContainer}>
@@ -102,7 +115,28 @@ const navigation = useNavigation();
                     >
                         <Text style={{color: COLORS.white, fontSize: 20, padding: 10}}>Sign Up</Text>
                     </TouchableOpacity>
+                    
                 </View>
+                <View style={{
+                    width: 300,
+                    height: 50,
+                    marginTop: 50,
+                    flexDirection: 'row',
+                    justifyContent: 'space-around',
+                    marginLeft:20
+                    
+                
+                }}>
+                    <Text style={{color: COLORS.white}}>Already have an account ?</Text>
+                        
+                    <Pressable 
+                    onPress={() => navigateToPage('Login')}
+                                        
+                    >
+                        <Text style={{color: 'blue'}}>Login</Text>
+                    </Pressable>
+                </View>
+                
             </ImageBackground>
             
         </SafeAreaView>

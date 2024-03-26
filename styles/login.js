@@ -3,8 +3,9 @@ import { COLORS, SIZES } from "../assets/themes/themes";
 
 export default StyleSheet.create({
     inputContainer: {
-        marginTop: 250,
-        padding: 20,
+        marginTop: 100,
+        // padding: 20,
+        // marginLeft: 20
 
     },
     textInput: {
@@ -25,16 +26,16 @@ export default StyleSheet.create({
         
     },
     buttonContainer: {
-        marginTop: 100,
+        marginTop: 50,
         width:350,
         alignItems: 'center',
         borderColor: COLORS.white
     },
     butttonStyle: {
         borderWidth: 1,
-        height: 60,
-        width: 300,
-        borderRadius: 20,
+        height: 50,
+        width: '90%',
+        borderRadius: 12,
         borderStyle: 'solid',
         borderColor: COLORS.white,
         alignItems: 'center',
