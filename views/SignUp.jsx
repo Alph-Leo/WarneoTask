@@ -130,7 +130,7 @@ const navigation = useNavigation();
                     <Text style={{color: COLORS.white}}>Already have an account ?</Text>
                         
                     <Pressable 
-                    onPress={() => navigateToPage('BottomTabNav')}
+                    onPress={() => navigateToPage('Login')}
                                         
                     >
                         <Text style={{color: 'blue'}}>Login</Text>

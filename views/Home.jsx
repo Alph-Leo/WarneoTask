@@ -10,6 +10,7 @@ const Home = ()=>{
 
     const navigateToPage = (pageName) => {
         navigation.navigate(pageName);
+        
     }
     const insets = useSafeAreaInsets();
 
@@ -32,7 +33,7 @@ const Home = ()=>{
                             
                         }}>
                             <Image
-                                style={{height: 200, width: 150, marginRight: 3}}
+                                style={{height: 200, width: 150, marginRight: 3, }}
                                 source={require('../assets/images/jpg/pexels-david-besh-884788.jpg')}
                             />
                             <Image
@@ -85,14 +86,18 @@ const Home = ()=>{
                             marginTop: 10
                             
                         }}>
-                            <Image
-                                style={{height: 200, width: 150, marginRight: 3}}
-                                source={require('../assets/images/jpg/pexels-pixabay-326212.jpg')}
-                            />
+                            <TouchableOpacity >
+                                
+                                <Image
+                                    style={{height: 200, width: 150, marginRight: 3}}
+                                    source={require('../assets/images/jpg/pexels-pixabay-326212.jpg')}
+                                />
+                            </TouchableOpacity>
                             <Image
                                 style={{height: 200, width: 150, marginLeft: 3}}
                                 source={require('../assets/images/jpg/pexels-pixabay-462162.jpg')}
                             />
+                            
                         </View>
                     </View>
                 </ScrollView>

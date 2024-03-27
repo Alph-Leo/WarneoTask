@@ -7,6 +7,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignUp from './views/SignUp';
 import Login from './views/Login';
 import BottomTabNav from './navigation/BottomTabNav';
+import Settings from './views/Settings';
+import Profile from './views/Profile';
+import Chat from './views/Chat';
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +41,22 @@ export default function App() {
           <Stack.Screen 
             name='Login' 
             component={Login} 
+            options={{headerShown: false}} 
+          />
+
+          <Stack.Screen 
+            name='Settings' 
+            component={Settings} 
+            options={{headerShown: false}} 
+          />
+          <Stack.Screen 
+            name='Profile' 
+            component={Profile} 
+            options={{headerShown: false}} 
+          />
+          <Stack.Screen 
+            name='Chat' 
+            component={Chat} 
             options={{headerShown: false}} 
           />
 
