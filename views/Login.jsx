@@ -34,7 +34,7 @@ const navigation = useNavigation();
             password !== ""
         ){
             setInputError("")
-            navigateToPage('Home')
+            navigateToPage('BottomTabNav')
             ToastAndroid.show('Login Succesfull', ToastAndroid.LONG)
         }
         
